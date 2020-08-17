@@ -1,0 +1,28 @@
+<?php
+
+return array (
+  'création_web_Outils_pilotage' => 'GRC management tools',
+  'création_web_description_p1' => 'With a perfect mastery of the different CMS, according to your specifications, we advise you on the platform most suited to your constraints and evolutions, and our certified developers will respond perfectly to your requests.',
+  'création_web_description_p2' => 'Creation of a showcase site for GRC management tools e-commerce site creation of an intranet.',
+  'création_web_réalisation_intranet' => 'Creation of an intranet',
+  'création_web_réalisation_vitrine' => 'Showcase website creation',
+  'création_web_site_ecommerce' => 'E-commerce site',
+  'création_web_title' => 'WEB CREATION',
+  'description_intégration_p1' => 'Our team is totally familiar with HTML5 and CSS3 requirements and standards',
+  'description_intégration_p2' => 'Perfectly mastering the constraints of Responsive Design, they respond to all your integration requests.',
+  'emailing' => 'E-mailing',
+  'integration_cms' => 'CMS integration',
+  'nos_services' => 'Our services',
+  'pages_sites' => 'Site pages',
+  'référencement_description_p1' => 'We can have a great site optimized but poorly referenced...',
+  'référencement_description_p2' => 'SEO gives you better visibility and allows you to reach a wider audience.',
+  'référencement_title' => 'SEO',
+  'réseaux_sociaux_description_p1' => 'Social networks are platforms where communicating seems to be child\'s play.',
+  'réseaux_sociaux_description_p2' => 'Yet these are supports that require a strategy on their own. We assist you or take full charge of the administration of one or all of your pages on these networks.',
+  'réseaux_sociaux_title' => 'SOCIAL NETWORKS',
+  'solutions_mobiles_description_p1' => 'Our teams design native IOS and Android or hybrid mobile applications using tools such as Phonegap or Titanuim.',
+  'solutions_mobiles_description_p2' => 'Within the framework of these applications we use the services, NFC, 3D augmented reality, beacon…, in interoperability with the systems of our customers.',
+  'solutions_mobiles_title' => 'MOBILE SOLUTIONS',
+  'title_intégration' => 'INTEGRATION',
+  'web_responsive' => 'Responsive Web',
+);

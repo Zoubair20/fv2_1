@@ -1,0 +1,28 @@
+<?php
+
+return array (
+  'création_web_Outils_pilotage' => 'Outils de pilotage GRC',
+  'création_web_description_p1' => 'Avec une parfaite maîtrise des différents CMS, suivant votre cahierdes charges, nous vous conseillons la plateforme la plus adaptée à vos contraintes et évolutions, et nos développeurs certifiés répondront parfaitement à vos demandes.',
+  'création_web_description_p2' => 'Réalisation de  site vitrine outils de pilotage GRC site e-commerce réalisation d’intranet.',
+  'création_web_réalisation_intranet' => 'Réalisation d’intranet',
+  'création_web_réalisation_vitrine' => 'Réalisation de site vitrine',
+  'création_web_site_ecommerce' => 'Site e-commerce',
+  'création_web_title' => 'CRÉATION WEB',
+  'description_intégration_p1' => 'Notre équipe est totalement rompue aux exigences et standards HTML5 et CSS3',
+  'description_intégration_p2' => 'Maitrisant parfaitement les contraintes du Responsive Design, Ils répondent à toute vos demandes d’integration.',
+  'emailing' => 'E-mailing',
+  'integration_cms' => 'Integration CMS',
+  'nos_services' => 'Nos Services',
+  'pages_sites' => 'Pages sites',
+  'référencement_description_p1' => 'On peut avoir un super site optimisé mais mal référencé...',
+  'référencement_description_p2' => 'Le référencement vous apporte une meilleure visibilité et vous permet de toucher un public plus large.',
+  'référencement_title' => 'RÉFÉRENCEMENT',
+  'réseaux_sociaux_description_p1' => 'Les réseaux sociaux sont des plateformes où communiquer paraît être un jeu d\'enfant.',
+  'réseaux_sociaux_description_p2' => 'Pourtant ce sont des supports qui nécessitent une stratégie à eux seuls. Nous vous assistons ou prenons totalement en charge l\'administration d\'une ou de l\'ensemble de vos pages sur ces réseaux.',
+  'réseaux_sociaux_title' => 'RÉSEAUX SOCIAUX',
+  'solutions_mobiles_description_p1' => 'Nos équipes conçoivent des applications mobiles natives IOS et Androïd ou hybrides en s’appuyant sur des outils tels que Phonegap ou Titanuim.',
+  'solutions_mobiles_description_p2' => 'Dans le cadre de ces applications nous utilisons les services, NFC, 3D réalité augmentée, beacon…, en interopérabilité avec les systèmes de nos clients.',
+  'solutions_mobiles_title' => 'SOLUTIONS MOBILES',
+  'title_intégration' => 'INTÉGRATION',
+  'web_responsive' => 'Web Responsive',
+);

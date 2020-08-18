@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -9,14 +8,8 @@
 
     <meta name="descriptison" content="FirstViewAgency Agence web à Marrakech et Casablanca spécialisée dans le développement web et mobile, la création de site internet, E-commerce, webmarketing et conseil web.">
     <meta name="keywords" content="firstviewagency, Website, Creation website, Digital marketing agency Marrakesh Maroc,Digital marketing agencies Morocco,Digital marketing companies,Creative digital marketing agency,Best Digital marketing agency Morocco,Top Digital marketing agency Morocco,Digital agency in Marrakesh,Digital marketing agency in Marrakesh,marketing,seo,digital marketing,affiliate marketing,social media marketing,marketing strategy,email marketing,marketing plan,advertising agency,internet marketing,seo services,seo company,marketing agency,web marketing,social marketing,agence de communication,agence de communication Marrakech,agence de communication Maroc,agence de communication et publicité,agence web maroc,branding,events marrakesh,agence événementielle marrakech,agence événementielle maroc,agence evenementiel a marrakech,agence evenementielle,agence communication evenementiel marrakech ,agence de communication marrakech gueliz,agences de communication marrakech,integration,reation web,solutions mobiles,référencement,referencement,website designe, web designe, designe site web,équipe,team">
-    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 
-{{--    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>--}}
-{{--    <link rel='stylesheet'--}}
-{{--        href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>--}}
-{{--    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>--}}
-{{--    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'>--}}
-{{--    <link rel="stylesheet" href="{{asset('/')}}assets/css/slider.css">--}}
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 
     <!-- Favicons -->
     <link href="{{asset('/')}}assets/img/favicon3.png" rel="icon">
@@ -40,11 +33,8 @@
     <link href="{{asset('/')}}assets/css/style.css" rel="stylesheet">
     <link href="{{asset('/')}}assets/vendor/flaticon/flaticon.css" rel="stylesheet">
 
-    @yield('styles')
 </head>
-
 <body>
-
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top header-transparent text-dark">
         <div class="container text-dark">
@@ -176,29 +166,19 @@
                             </tbody>
                         </table>
                     </div>
-
                 </div>
             </div>
         </div>
 
         <div class="container">
             <div class="copyright">
-                {{-- &copy; Copyright <strong><span>FirstView</span></strong>. All Rights Reserved --}}
                 <a  href="https://www.firstviewagency.com/"><b>FirstViewAgency</b></a><span> Copyright &copy;  2018-{{now()->year}}.</span> All Rights Reserved
             </div>
-            {{-- <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div> --}}
         </div>
+
     </footer>
     <!-- End Footer -->
-
     <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
     <!-- Vendor JS Files -->
     <script src="{{asset('/')}}assets/vendor/jquery/jquery.min.js"></script>
     <script src="{{asset('/')}}assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -211,11 +191,10 @@
     <script src="{{asset('/')}}assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="{{asset('/')}}assets/vendor/aos/aos.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
     <!-- Template Main JS File -->
     <script src="{{asset('/')}}assets/js/main.js"></script>
 
-    @yield('scripts')
-
 </body>
-
 </html>

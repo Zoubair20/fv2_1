@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/', 'SiteController@accueil');
 Route::get('/nos-services', 'SiteController@services');
 Route::get('/nos-profils', 'SiteController@profils');
@@ -23,18 +24,11 @@ Route::post('/recrutement', 'RecrutementController@store');
 Route::get('/blog/{slug?}', 'BlogController@blog');
 Route::get('/post/{slug}', 'BlogController@show');
 
-// Route::post('/contact', 'BlogController@store');
 Route::post('/contact', 'SiteController@store');
-
-// Route::get('/accueil1', 'SiteController@accueil1');
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
+//Route::get('/accueil', 'HomeController@index')->name('home');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

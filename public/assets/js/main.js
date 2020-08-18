@@ -1,9 +1,25 @@
-/**
-* Template Name: Moderna - v2.0.1
-* Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
 !(function($) {
   "use strict";
 

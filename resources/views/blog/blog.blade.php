@@ -29,10 +29,9 @@
                                     <div class="col-md-12 align-items-stretch aos-init" data-aos="fade-up">
                                         <div class="card">
                                             <div class="card-img">
-                                                <a href="{{url('/post/'.$post->slug)}}">
-                                                    <img src="{{ asset('/storage/'.$post->image) }}"
-                                                         alt="{{ $post->title }}">
-                                                </a>
+                                                <a href="{{url('/post/'.$post->slug)}}"><img
+                                                        src="{{ asset('/storage/'.$post->image) }}"
+                                                        alt="{{ $post->title }}"></a>
                                             </div>
                                             <div class="card-body">
                                                 <h5 class="card-title"><a
@@ -42,11 +41,7 @@
                                                             class="icofont-arrow-right"></i>Lire la suite</a></div>
                                             </div>
                                         </div>
-
                                     </div>
-
-
-
                                 @endforeach
                             </div>
                         </div>
@@ -86,15 +81,9 @@
                                 </div>
                             @endforeach
                         </div><!-- End sidebar recent posts-->
-
                     </div><!-- End sidebar -->
-
                 </div><!-- End blog sidebar -->
-
             </div><!-- End .row -->
-
         </div><!-- End .container -->
-
     </section>
-
 @endsection

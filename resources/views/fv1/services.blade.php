@@ -44,12 +44,12 @@
                     <table style="width: 100%;" >
                         <tbody>
                         <tr>
-                            <td>  <li><i class="icofont-check"></i>{{__('services.création_web_réalisation_vitrine')}}</li></td>
-                            <td>  <li><i class="icofont-check"></i>{{__('services.création_web_Outils_pilotage')}}</li> </td>
+                            <td><li><i class="icofont-check"></i>{{__('services.création_web_réalisation_vitrine')}}</li></td>
+                            <td><li><i class="icofont-check"></i>{{__('services.création_web_Outils_pilotage')}}</li></td>
                         </tr>
                         <tr>
-                            <td> <li><i class="icofont-check"></i>{{__('services.création_web_site_ecommerce')}}</li> </td>
-                            <td> <li><i class="icofont-check"></i>{{__('services.création_web_réalisation_intranet')}}</li> </td>
+                            <td><li><i class="icofont-check"></i>{{__('services.création_web_site_ecommerce')}}</li></td>
+                            <td><li><i class="icofont-check"></i>{{__('services.création_web_réalisation_intranet')}}</li></td>
                         </tr>
                         </tbody>
                     </table>

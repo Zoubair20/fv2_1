@@ -1,4 +1,7 @@
 @extends('layouts.master')
+
+@section('title')Demander Un Devis - FirstViewAgency @endsection
+
 @section('content')
 
 @section('page-head')

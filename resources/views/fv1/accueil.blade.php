@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('title')FirstViewAgency - Agence de Communication Digitale @endsection
 
 @section('styles')
     <style>
@@ -203,7 +204,6 @@
     </style>
 @endsection
 
-
 @section('content')
 {{--<div class="container-fluid">--}}
 <section id="hero" class="d-flex justify-cntent-center align-items-center">
@@ -392,7 +392,8 @@
     </section>
 
 @endsection
-    @section('scripts')
+
+@section('scripts')
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
         <script>
             $(document).ready(function(){

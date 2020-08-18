@@ -1,6 +1,8 @@
 @extends('layouts.master')
-@section('content')
 
+@section('title')Contact - FirstViewAgency @endsection
+
+@section('content')
 @section('page-head')
     <div class="bg-overlay bg-overlay-gradient bg-section" style="background-image:url({{asset('storage/head-page/bg4.jpg')}});">
         <h1>{{__('contact.contactez_nous')}}</h1>

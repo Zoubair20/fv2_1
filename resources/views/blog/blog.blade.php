@@ -1,5 +1,5 @@
 @extends('layouts.master')
-
+@section('title')Blog - FirstViewAgency @endsection
 @section('content')
     <div class="bg-overlay-gradient .bg-overlay">
         <section class="breadcrumbs">
@@ -74,7 +74,7 @@
                             </ul>
 
                         </div><!-- End sidebar categories-->
-                        
+
                         <h3 class="sidebar-title">Recent Posts</h3>
                         <div class="sidebar-item recent-posts">
                             @foreach($lastposts as $post)

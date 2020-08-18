@@ -1,5 +1,7 @@
 @extends('layouts.master')
 
+@section('title')Nos Profils - FirstViewAgency @endsection
+
 @section('content')
 @section('page-head')
     <div class="bg-overlay bg-overlay-gradient bg-section" style="background-image:url({{asset('storage/head-page/bg3.jpg')}});">

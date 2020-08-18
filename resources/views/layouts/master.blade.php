@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>First View Agency</title>
+    <title>@yield('title')</title>
 
     <meta name="descriptison" content="FirstViewAgency Agence web à Marrakech et Casablanca spécialisée dans le développement web et mobile, la création de site internet, E-commerce, webmarketing et conseil web.">
     <meta name="keywords" content="firstviewagency, Website, Creation website, Digital marketing agency Marrakesh Maroc,Digital marketing agencies Morocco,Digital marketing companies,Creative digital marketing agency,Best Digital marketing agency Morocco,Top Digital marketing agency Morocco,Digital agency in Marrakesh,Digital marketing agency in Marrakesh,marketing,seo,digital marketing,affiliate marketing,social media marketing,marketing strategy,email marketing,marketing plan,advertising agency,internet marketing,seo services,seo company,marketing agency,web marketing,social marketing,agence de communication,agence de communication Marrakech,agence de communication Maroc,agence de communication et publicité,agence web maroc,branding,events marrakesh,agence événementielle marrakech,agence événementielle maroc,agence evenementiel a marrakech,agence evenementielle,agence communication evenementiel marrakech ,agence de communication marrakech gueliz,agences de communication marrakech,integration,reation web,solutions mobiles,référencement,referencement,website designe, web designe, designe site web,équipe,team">
@@ -57,37 +57,30 @@
 
             <nav class="nav-menu float-right d-none d-lg-block">
                 <ul>
-                    <li class="pl-3 {{ request()->is('/') ? 'active' : '' }}"><a href="/">Accueil</a></li>
-                    <li class="drop-down pl-3 {{ request()->is('nos-services*') ? 'active' : '' }}"><a href="/nos-services">Nos Services</a>
+                    <li class="pl-3 {{ request()->is('/') ? 'active' : '' }}"><a href="/">{{__('master.nav_accueil')}}</a></li>
+                    <li class="drop-down pl-3 {{ request()->is('nos-services*') ? 'active' : '' }}"><a href="/nos-services">{{__('master.nav_nos_Services')}}</a>
                         <ul>
-                            <li><a href="/nos-services#integration">Intégration</a></li>
-                            <li><a href="/nos-services#creation-web">Création WEB</a></li>
-                            <li><a href="/nos-services#solution-mobiles">Solution Mobiles</a></li>
-                            <li><a href="/nos-services#reseaux-sociaux">Réseaux Sociaux</a></li>
-                            <li><a href="/nos-services#referencement">Référencement</a></li>
+                            <li><a href="/nos-services#integration">{{__('master.nav_intégration')}}</a></li>
+                            <li><a href="/nos-services#creation-web">{{__('master.nav_création_web')}}</a></li>
+                            <li><a href="/nos-services#solution-mobiles">{{__('master.nav_solution_mobiles')}}</a></li>
+                            <li><a href="/nos-services#reseaux-sociaux">{{__('master.nav_réseaux_sociaux')}}</a></li>
+                            <li><a href="/nos-services#referencement">{{__('master.nav_référencement')}}</a></li>
                         </ul>
                     </li>
 
-                    <li class="pl-3 {{ request()->is('recrutement') ? 'active' : '' }}"><a href="/recrutement">Recrutement</a></li>
+                    <li class="pl-3 {{ request()->is('recrutement') ? 'active' : '' }}"><a href="/recrutement">{{__('master.nav_recrutement')}}</a></li>
 
-                    <li class="drop-down pl-3 {{ request()->is('nos-profils*') ? 'active' : '' }}"><a href="/nos-profils">Nos Profils</a>
+                    <li class="drop-down pl-3 {{ request()->is('nos-profils*') ? 'active' : '' }}"><a href="/nos-profils">{{__('master.nav_nos_profils')}}</a>
                         <ul>
-                            <li><a href="/nos-profils#integration">Intégrateur</a></li>
-                            <li><a href="/nos-profils#creation-web">Développeur WEB</a></li>
-                            <li><a href="/nos-profils#solution-mobiles">Web Master</a></li>
-                            <li><a href="/nos-profils#reseaux-sociaux">Community Manager</a></li>
+                            <li><a href="/nos-profils#integration">{{__('master.nav_intégrateur')}}</a></li>
+                            <li><a href="/nos-profils#creation-web">{{__('master.nav_développeur_web')}}</a></li>
+                            <li><a href="/nos-profils#solution-mobiles">{{__('master.nav_web_master')}}</a></li>
+                            <li><a href="/nos-profils#reseaux-sociaux">{{__('master.nav_community_manager')}}</a></li>
                         </ul>
                     </li>
-                    <li class="pl-3 {{ request()->is('blog') ? 'active' : '' }}"><a href="/blog">Blog</a></li>
-                    <li class="pl-3 {{ request()->is('contact') ? 'active' : '' }}"><a href="/contact">Contact</a></li>
-                    <li class="pl-5 {{ request()->is('demander-un-devis') ? 'active' : '' }}"><a href="/demander-un-devis">ONLINE QUOTE</a></li>
-                    <li>
-                        <a href="{{ App::setLocale('en') }}">en</a>
-                    </li>
-                    <li>
-                        <a href="{{ App::setLocale('fr')  }}">fr</a>
-                    </li>
-
+                    <li  class="pl-3 {{ request()->is('blog') ? 'active' : '' }}"><a href="/blog">{{__('master.nav_blog')}}</a></li>
+                    <li class="pl-3 {{ request()->is('contact') ? 'active' : '' }}"><a href="/contact">{{__('master.nav_contact')}}</a></li>
+                    <li class="pl-5 {{ request()->is('demander-un-devis') ? 'active' : '' }}"><a href="/demander-un-devis">{{__('master.nav_online_quote')}}</a></li>
                 </ul>
             </nav><!-- .nav-menu -->
 
@@ -115,10 +108,9 @@
 
                     <div class="col-lg-4 col-md-6 footer-links">
                         <img class="pb-3" src="{{asset('/')}}storage/logos/logo-white-230.png" alt="" class="img-fluid">
-                        <p>Agence créative multidisciplinaire, First View Agency peut vous
-                            accompagner dans la réalisation de tous vos projets.</p>
+                        <p>{{__('master.footer_description')}}</p>
                         <div class="social-links mt-3">
-                            <h4 class="footer-heading">Suivez nous</h4>
+                            <h4 class="footer-heading">{{__('master.footer_suivez_nous')}}</h4>
                             <a target="_blank" href="https://twitter.com/firstview14" class="twitter"><i class="bx bxl-twitter"></i></a>
                             <a target="_blank" href="https://www.facebook.com/firstviewagency/" class="facebook"><i class="bx bxl-facebook"></i></a>
                             <a target="_blank" href="https://www.instagram.com/firstviewagency/" class="instagram"><i class="bx bxl-instagram"></i></a>

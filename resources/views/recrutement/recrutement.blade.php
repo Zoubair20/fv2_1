@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('title')Recrutement - FirstViewAgency @endsection
 @section('content')
 
     @section('page-head')

@@ -1,5 +1,5 @@
 @extends('layouts.master')
-
+@section('title'){{ $recrutements->title }} - FirstViewAgency @endsection
 @section('content')
 <section class="blog aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
     <div class="container">

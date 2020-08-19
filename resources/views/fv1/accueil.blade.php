@@ -6,7 +6,7 @@
     {{--<div class="container-fluid">--}}
     <section id="hero" class="d-flex justify-cntent-center align-items-center">
         <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
-            <!-- Slide 1 -->
+            <!-- Slide 1  -->
             <div class="carousel-item active">
                 <div class="carousel-container">
                     <h2 class="animated fadeInDown">{{ __('accueil.1_slide_h2') }}</h2>

@@ -45,7 +45,7 @@
                 <a href="/"><img src="{{asset('/')}}storage/logos/logo-black-150.png" alt="" class="img-fluid"></a>
             </div>
 
-            <nav class="nav-menu float-right d-none d-lg-block">
+            <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li class="pl-3 {{ request()->is('/') ? 'active' : '' }}"><a href="/">{{__('master.nav_accueil')}}</a></li>
                     <li class="drop-down pl-3 {{ request()->is('nos-services*') ? 'active' : '' }}"><a href="/nos-services">{{__('master.nav_nos_Services')}}</a>
@@ -58,7 +58,6 @@
                         </ul>
                     </li>
 
-                    <li class="pl-3 {{ request()->is('recrutement') ? 'active' : '' }}"><a href="/recrutement">{{__('master.nav_recrutement')}}</a></li>
 
                     <li class="drop-down pl-3 {{ request()->is('nos-profils*') ? 'active' : '' }}"><a href="/nos-profils">{{__('master.nav_nos_profils')}}</a>
                         <ul>
@@ -68,7 +67,6 @@
                             <li><a href="/nos-profils#reseaux-sociaux">{{__('master.nav_community_manager')}}</a></li>
                         </ul>
                     </li>
-                    <li  class="pl-3 {{ request()->is('blog') ? 'active' : '' }}"><a href="/blog">{{__('master.nav_blog')}}</a></li>
                     <li class="pl-3 {{ request()->is('contact') ? 'active' : '' }}"><a href="/contact">{{__('master.nav_contact')}}</a></li>
                     <li class="pl-5 {{ request()->is('demander-un-devis') ? 'active' : '' }}"><a href="/demander-un-devis">{{__('master.nav_online_quote')}}</a></li>
                 </ul>
@@ -166,7 +164,18 @@
                             </tbody>
                         </table>
                     </div>
+
                 </div>
+
+                <nav class="navbar navbar-expand-sm  navbar-dark justify-content-center p-0">
+                    <!-- Links -->
+                    <ul class="navbar-nav">
+                        <li  class="nav-item pl-3 {{ request()->is('blog') ? 'active' : '' }}"><a class="nav-link" href="/blog">{{__('master.nav_blog')}}</a></li>
+                        <li class="nav-item pl-3 {{ request()->is('recrutement') ? 'active' : '' }}"><a class="nav-link" href="/recrutement">{{__('master.nav_recrutement')}}</a></li>
+{{--                    <li class="nav-item pl-3 {{ request()->is('') ? 'active' : '' }}"><a class="nav-link" href="/">CONDITIONS GÉNÉRALES DE VENTES</a></li>--}}
+                    </ul>
+                </nav>
+
             </div>
         </div>
 

@@ -19,7 +19,6 @@
                     <h2>{{__('contact.trouvez_nous')}}</h2>
                 </div>
                 <div class="row">
-
                     <iframe class="p-3"
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13587.805749353993!2d-8.015918!3d31.63518!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd0db7895af949bfb!2sFirst%20View%20Agency!5e0!3m2!1sfr!2sma!4v1585927309457!5m2!1sfr!2sma"
                             width="600" height="425" frameborder="0" allowfullscreen="" aria-hidden="false"
@@ -39,7 +38,6 @@
 
             </div>
 
-
             <div class="col-lg-6 order-1 order-md-2">
                 <div class="section-title pt-2 pb-0">
                     <h2>Contactez-Nous</h2>
@@ -47,7 +45,6 @@
                 <form action="{{url('/contact')}}" method="POST" role="form" class="php-email-form shadow-none">
                     @csrf
                     <div class="form-row">
-
                         <div class="col-md-6 form-group">
                             <input type="text" name="nom" class="form-control" id="name"
                                    placeholder="{{__('contact.placeholder_nom')}}" data-rule="minlen:4"
@@ -73,7 +70,6 @@
                                data-rule="minlen:4" data-msg="Veuillez saisir au moins 8 caractères du sujet">
                         <div class="validate"></div>
                     </div>
-
                     <div class="form-group">
                             <textarea class="form-control" name="message" rows="5" data-rule="required"
                                       data-msg="S'il vous plaît écrivez quelque chose pour nous"
@@ -91,18 +87,14 @@
                     </div>
                 </form>
             </div>
-
         </div>
-
     </div>
 </section>
 
 <section class="contact aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-in-out"
          data-aos-duration="500">
     <div class="container">
-
         <div class="row">
-
             <div class="col-lg-6 pt-1 order-2 order-md-1">
                 <div class="br-fv">
                     <div class="row mx-2">
@@ -130,7 +122,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-lg-6 pt-1 order-1 order-md-2">
                 <div class="br-fv">
                     <div class="row mx-2">
@@ -158,9 +149,7 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
 </section>
 @endsection

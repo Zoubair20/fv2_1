@@ -37,18 +37,19 @@
 <body>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top header-transparent text-dark">
+
         <div class="container text-dark">
 
             <div class="logo float-left">
                 {{-- <h1 class="bg-danger"><a href="index.html"><span>First View</span></a></h1> --}}
                 <!-- Uncomment below if you prefer to use an image logo -->
-                <a href="/"><img src="{{asset('/')}}storage/logos/logo-black-150.png" alt="" class="img-fluid"></a>
+                <a class="pr-5" href="/"><img src="{{asset('/')}}storage/logos/logo-black-150.png" alt="logo firstviewagency" class="img-fluid"></a>
             </div>
 
-            <nav class="nav-menu d-none d-lg-block">
+            <nav class=" h2 nav-menu d-none d-lg-block">
                 <ul>
-                    <li class="pl-3 {{ request()->is('/') ? 'active' : '' }}"><a href="/">{{__('master.nav_accueil')}}</a></li>
-                    <li class="drop-down pl-3 {{ request()->is('nos-services*') ? 'active' : '' }}"><a href="/nos-services">{{__('master.nav_nos_Services')}}</a>
+                    <li class="{{ request()->is('/') ? 'active' : '' }}"><a href="/">{{__('master.nav_accueil')}}</a></li>
+                    <li class="drop-down {{ request()->is('nos-services*') ? 'active' : '' }}"><a href="/nos-services">{{__('master.nav_nos_Services')}}</a>
                         <ul>
                             <li><a href="/nos-services#integration">{{__('master.nav_intégration')}}</a></li>
                             <li><a href="/nos-services#creation-web">{{__('master.nav_création_web')}}</a></li>
@@ -59,7 +60,7 @@
                     </li>
 
 
-                    <li class="drop-down pl-3 {{ request()->is('nos-profils*') ? 'active' : '' }}"><a href="/nos-profils">{{__('master.nav_nos_profils')}}</a>
+                    <li class="drop-down  {{ request()->is('nos-profils*') ? 'active' : '' }}"><a href="/nos-profils">{{__('master.nav_nos_profils')}}</a>
                         <ul>
                             <li><a href="/nos-profils#integration">{{__('master.nav_intégrateur')}}</a></li>
                             <li><a href="/nos-profils#creation-web">{{__('master.nav_développeur_web')}}</a></li>
@@ -67,12 +68,29 @@
                             <li><a href="/nos-profils#reseaux-sociaux">{{__('master.nav_community_manager')}}</a></li>
                         </ul>
                     </li>
-                    <li class="pl-3 {{ request()->is('contact') ? 'active' : '' }}"><a href="/contact">{{__('master.nav_contact')}}</a></li>
+                    <li class=" {{ request()->is('contact') ? 'active' : '' }}"><a href="/contact">{{__('master.nav_contact')}}</a></li>
                     <li class="pl-5 {{ request()->is('demander-un-devis') ? 'active' : '' }}"><a href="/demander-un-devis">{{__('master.nav_online_quote')}}</a></li>
-                </ul>
-            </nav><!-- .nav-menu -->
 
+
+                </ul>
+                <table class="table table-bordered d-sm-none d-xs-block">
+                    <tr>
+                        <td><a href="#">FR</a></td>
+                    </tr><tr>
+                        <td><a href="#">EN</a></td>
+                    </tr>
+                </table>
+
+            </nav><!-- .nav-menu -->
         </div>
+        <table class="px-3 table-bordered d-none d-lg-inline-block">
+            <tr>
+                <td><a href="#">FR</a></td>
+            </tr><tr>
+                <td><a href="#">EN</a></td>
+            </tr>
+        </table>
+
     </header>
     <!-- End Header -->
 
@@ -90,6 +108,8 @@
     <!-- ======= Footer ======= -->
     <footer id="footer">
 {{--        <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">--}}
+        <button type="submit" onclick="window.open('{{asset("black.pdf")}}')">Download111</button>
+
         <div class="footer-top">
             <div class="container">
                 <div class="row">
@@ -167,11 +187,11 @@
 
                 </div>
 
-                <nav class="navbar navbar-expand-sm  navbar-dark justify-content-center p-0">
+                <nav class="border border-secondary navbar navbar-expand-sm  navbar-dark justify-content-center p-0">
                     <!-- Links -->
-                    <ul class="navbar-nav">
-                        <li  class="nav-item pl-3 {{ request()->is('blog') ? 'active' : '' }}"><a class="nav-link" href="/blog">{{__('master.nav_blog')}}</a></li>
-                        <li class="nav-item pl-3 {{ request()->is('recrutement') ? 'active' : '' }}"><a class="nav-link" href="/recrutement">{{__('master.nav_recrutement')}}</a></li>
+                    <ul class="navbar-nav ">
+                        <li  class="border-right border-left border-secondary nav-item  px-3 {{ request()->is('blog') ? 'active' : '' }}"><a class="nav-link" href="/blog">{{__('master.nav_blog')}}</a></li>
+                        <li class="border-right border-secondary nav-item px-3 {{ request()->is('recrutement') ? 'active' : '' }}"><a class="nav-link" href="/recrutement">{{__('master.nav_recrutement')}}</a></li>
 {{--                    <li class="nav-item pl-3 {{ request()->is('') ? 'active' : '' }}"><a class="nav-link" href="/">CONDITIONS GÉNÉRALES DE VENTES</a></li>--}}
                     </ul>
                 </nav>

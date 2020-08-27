@@ -6,7 +6,7 @@ return array (
   'nav_accueil' => 'Accueil',
   'nav_blog' => 'Blog',
   'nav_community_manager' => 'Community Manager',
-  'nav_contact' => 'Contact',
+  'nav_contact' => 'Contactez-nous',
   'nav_création_web' => 'Création WEB',
   'nav_développeur_web' => 'Développeur WEB',
   'nav_intégrateur' => 'Intégrateur',

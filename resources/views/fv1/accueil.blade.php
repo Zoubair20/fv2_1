@@ -43,7 +43,6 @@
 
         </div>
     </section>
-
     <section class="services">
         <div class="container">
             <section class="section-title pb-0">
@@ -155,33 +154,33 @@
         </section>
         <div class="container">
             <section class="customer-logos slider pt-0">
-                <div class="slide"><img src="{{asset('storage/nos-references/abroun.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/cogemil.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/arabbest1.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/arganhaus.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/atlas-kasbah.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/beautiful-morocco.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/caceed.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/chadia.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/chronopost.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/cogemat.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/dolce&caffe.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/ec.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/fiat.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/gl-events.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/le-saxo.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/lila-luxe.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/Linguaplatinum.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/logicom.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/marrakech-dental.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/mustang.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/abroun.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/cogemil.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/arabbest1.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/arganhaus.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/atlas-kasbah.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/beautiful-morocco.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/caceed.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/chadia.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/chronopost.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/cogemat.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/dolce&caffe.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/ec.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/fiat.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/gl-events.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/le-saxo.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/lila-luxe.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/Linguaplatinum.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/logicom.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/marrakech-dental.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/mustang.png')}}"></div>
                 {{--                <div class="slide"><img src="{{asset('storage/nos-references/nour bougie.png')}}"></div>--}}
-                <div class="slide"><img src="{{asset('storage/nos-references/oxylite.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/oxylite.png')}}"></div>
                 {{--                <div class="slide"><img src="{{asset('storage/nos-references/Palace-conseils.png')}}"></div>--}}
-                <div class="slide"><img src="{{asset('storage/nos-references/poolhouse.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/royal-atlas.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/sfiabeauty.png')}}"></div>
-                <div class="slide"><img src="{{asset('storage/nos-references/Universal-Maroc.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/poolhouse.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/royal-atlas.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/sfiabeauty.png')}}"></div>
+                <div class="slide"><img alt="logo nos-references" src="{{asset('storage/nos-references/Universal-Maroc.png')}}"></div>
 
             </section>
         </div>

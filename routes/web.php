@@ -15,7 +15,10 @@ Route::get('/', 'SiteController@accueil');
 Route::get('/nos-services', 'SiteController@services');
 Route::get('/nos-profils', 'SiteController@profils');
 Route::get('/contact', 'SiteController@contact');
+
 Route::get('/demander-un-devis', 'SiteController@quote');
+
+Route::post('/demander-un-devis', 'SiteController@store1');
 
 Route::get('/recrutement', 'RecrutementController@recrutement');
 Route::get('/offre/{slug}', 'RecrutementController@offre');

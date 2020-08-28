@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\ContactFormMail;
+use App\Mail\QuoteFormMail;
 use App\Post, App\Category , App\Contact;
 
 use Illuminate\Http\Request;
@@ -44,8 +45,20 @@ class SiteController extends Controller
         $contact->save();
 
         $data=request();
-        Mail::to('zoubair.firstview@gmail.com')->bcc('wydad@firstviewagency.com')->send(new ContactFormMail($data));
+        Mail::to('contact@firstviewagency.com')->send(new ContactFormMail($data));
         return redirect('contact')->with('status', 'Votre message a été envoyé. Je vous remercie!');
+    }
+
+    public function store1(Request $request){
+
+        $data=request();
+
+        $ats =  implode(' - ',request()->input('services'));
+
+        $data['services']=$ats;
+
+        Mail::to('contact@firstviewagency.com')->send(new QuoteFormMail($data));
+        return redirect('/demander-un-devis');
     }
 
 }

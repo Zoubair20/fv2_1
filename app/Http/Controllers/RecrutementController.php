@@ -24,7 +24,7 @@ class RecrutementController extends Controller
     public function store()
     {
         $data=request();
-        Mail::to('zoubair.firstview@gmail.com')->bcc('wydad@firstviewagency.com')->send(new RecrutementFormMail($data));
+        Mail::to('contact@firstviewagency.com')->send(new RecrutementFormMail($data));
         return redirect('recrutement');
     }
     /**

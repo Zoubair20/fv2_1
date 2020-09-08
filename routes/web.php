@@ -9,8 +9,14 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::redirect('/','/fr');
-Route::group(['prefix' => '{language}'], function () {
+Auth::routes();
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+
+//Route::redirect('/','/fr');
+//Route::group(['prefix' => '{language}'], function () {
 
     Route::get('/', 'SiteController@accueil');
     Route::get('/nos-services', 'SiteController@services');
@@ -37,12 +43,8 @@ Route::group(['prefix' => '{language}'], function () {
         if (App::islocale('fr'))
             dd(App::getlocale());
     });
-});
+//});
 
-Auth::routes();
 
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
 
 

@@ -46,32 +46,34 @@
                     @csrf
                     <div class="form-row">
                         <div class="col-md-6 form-group">
-                            <input type="text" name="nom" class="form-control" id="name"
+                            <input required type="text" name="nom" class="form-control" id="name"
                                    placeholder="{{__('contact.placeholder_nom')}}" data-rule="minlen:4"
-                                   data-msg="Veuillez saisir au moins 4 caractères">
+                                   data-msg="Veuillez saisir au moins 4 caractères"
+                                   oninvalid="this.setCustomValidity('Ple E email')"
+                                   oninput="setCustomValidity('')">
                             <div class="validate"></div>
                         </div>
                         <div class="col-md-6 form-group">
-                            <input type="email" class="form-control" name="email" id="email"
+                            <input required type="email" class="form-control" name="email" id="email"
                                    placeholder="{{__('contact.placeholder_email')}}" data-rule="email"
                                    data-msg="Veuillez saisir un e-mail valide">
                             <div class="validate"></div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="tel" class="form-control" name="tel" id="tel"
+                        <input required type="tel" class="form-control" name="tel" id="tel"
                                placeholder="{{__('contact.placeholder_tel')}}"
                                data-rule="minlen:10" data-msg="Veuillez saisir au moins 10">
                         <div class="validate"></div>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="objet" id="subject"
+                        <input required type="text" class="form-control" name="objet" id="subject"
                                placeholder="{{__('contact.placeholder_objet')}}"
                                data-rule="minlen:4" data-msg="Veuillez saisir au moins 8 caractères du sujet">
                         <div class="validate"></div>
                     </div>
                     <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" data-rule="required"
+                            <textarea required class="form-control" name="message" rows="5" data-rule="required"
                                       data-msg="S'il vous plaît écrivez quelque chose pour nous"
                                       placeholder="{{__('contact.placeholder_message')}}"></textarea>
                         <div class="validate"></div>

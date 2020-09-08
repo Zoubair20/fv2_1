@@ -29,20 +29,20 @@
             @csrf
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <input name="nom" type="text" class="form-control" placeholder="{{__('quote.placeholder_nom')}}">
+                    <input required name="nom" type="text" class="form-control" placeholder="{{__('quote.placeholder_nom')}}">
                 </div>
                 <div class="form-group col-md-6">
-                    <input name="prenom" type="text" class="form-control"
+                    <input required name="prenom" type="text" class="form-control"
                            placeholder="{{__('quote.placeholder_societe')}}">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <input name="email" type="text" class="form-control"
+                    <input required name="email" type="email" class="form-control"
                            placeholder="{{__('quote.placeholder_email')}}">
                 </div>
                 <div class="form-group col-md-6">
-                    <input name="telephone" type="text" class="form-control"
+                    <input required name="telephone" type="tel" class="form-control"
                            placeholder="{{__('quote.placeholder_tel')}}">
                 </div>
             </div>
@@ -107,7 +107,7 @@
             </div>
             <div class="form-row">
                 <div class="form-group col-md-8">
-                    <textarea name="message" class="form-control"
+                    <textarea required name="message" class="form-control"
                               placeholder="{{__('quote.placeholder_message')}}"></textarea>
                 </div>
                 <div class="form-group col-md-4">

@@ -88,13 +88,17 @@
                         <p class="description">{{__('accueil.description_référencement_marketing')}}</p>
                     </div>
                 </div>
-
             </div>
 
         </div>
     </section>
 
-    <div class="container-fluid">
+    <div class="section-title px-2 mx-4 shadow rounded">
+        <h2>A Proposé De Nous</h2>
+        <p class="h5 px-sm-2 px-md-2 px-xl-5"> <strong>FirstViewAgency</strong> est une Agence de communication au Maroc forte de plusieurs années l’expérience en publicité à Marrakech et Casablanca, agence d’événementiel, organisation de soirées events et conférences, Goodies et objets publicitaires au Maroc, création de site web Prestashop, agence de création graphique et contenu digital, agence de conseil en marketing Maroc, agence de publicité Maroc, événementiel Maroc, référencement web.<br> <strong>FirstViewAgency</strong> Maroc est une agence certifiée Google et spécialisée en webmarketing digital, référencement naturel, Référencement Google, agence de communication Maroc, agence de communication Marrakech, agence d’événementiel Maroc,  <strong>FirstViewAgency</strong> boite de Com et conseil en communication.</p>
+    </div>
+
+    <div class="container-fluid mt-5">
         <section class="why-us section-bg aos-init aos-animate" data-aos="fade-up" date-aos-delay="200">
             <div class="container">
 

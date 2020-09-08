@@ -21,9 +21,10 @@ class RecrutementController extends Controller
         return view('recrutement.offre',['recrutements'=>$recrutements]);
     }
 
-    public function store()
+    public function store(Request $request)
     {
         $data=request();
+
         Mail::to('contact@firstviewagency.com')->send(new RecrutementFormMail($data));
         return redirect('recrutement');
     }

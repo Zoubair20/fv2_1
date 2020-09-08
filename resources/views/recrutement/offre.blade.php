@@ -46,22 +46,26 @@
                     <div class="section-title pb-1">
                         <h2 class="pt-5 ">POSTULER À CETTE OFFRE</h2>
                     </div>
-                    <form action="/recrutement" method="POST" class="p-3">
+                    <form action="/recrutement" method="POST" enctype="multipart/form-data" class="p-3 pb-5">
                         @csrf
+                        <input name="recrut" type="hidden" value="{{ $recrutements->title }}">
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <input name="nom" type="text" class="form-control" placeholder="VOTRE NOM">
+                                <input required name="nom" type="text" class="form-control" placeholder="VOTRE NOM">
                             </div>
                             <div class="form-group col-md-6">
-                                <input name="prenom" type="text" class="form-control" placeholder="VOTRE PRÉNOM">
+                                <input required name="prenom" type="text" class="form-control"
+                                       placeholder="VOTRE PRÉNOM">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <input name="email" type="text" class="form-control" placeholder="VOTRE EMAIL">
+                                <input required name="email" type="email" class="form-control"
+                                       placeholder="VOTRE EMAIL">
                             </div>
                             <div class="form-group col-md-6">
-                                <input name="telephone" type="text" class="form-control" placeholder="TÉLÉPHONE">
+                                <input required name="telephone" type="tel" class="form-control"
+                                       placeholder="TÉLÉPHONE">
                             </div>
                         </div>
                         <div class="form-row">
@@ -89,11 +93,21 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <textarea rows="5" name="message" class="form-control" placeholder="MESSAGE"></textarea>
+                            <div class="form-group col-md-12">
+                                <textarea required rows="5" name="message" class="form-control"
+                                          placeholder="MESSAGE"></textarea>
                             </div>
+                        </div>
+                        <div class="form-row">
+{{--                            <div class="form-group col-md-6">--}}
+{{--                                <div class="form-group">--}}
+{{--                                    <label for="FormControlFile1">Votre CV</label>--}}
+{{--                                    <input type="file" class="form-control-file" id="FormControlFile1">--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
                             <div class="form-group col-md-6">
-                                <div class="g-recaptcha" data-sitekey="6LcxaakZAAAAAESGMyWTwxupTcj-rqHMKgsVM1SJ"></div>
+                                <div class="g-recaptcha"
+                                     data-sitekey="6LcxaakZAAAAAESGMyWTwxupTcj-rqHMKgsVM1SJ"></div>
                             </div>
                         </div>
                         <button type="submit" class="btn btn-fv">envoyer</button>

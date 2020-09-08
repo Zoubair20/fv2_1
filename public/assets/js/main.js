@@ -1,3 +1,10 @@
+let after = document.getElementById('afterload');
+let befor = document.getElementById('beforeload');
+window.addEventListener('load', function () {
+    after.style.display = "block";
+    befor.style.display = "none";
+})
+
 $(document).ready(function(){
     $('.customer-logos').slick({
         slidesToShow: 8,

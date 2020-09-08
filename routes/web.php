@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,29 +9,40 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::redirect('/','/fr');
+Route::group(['prefix' => '{language}'], function () {
 
-Route::get('/', 'SiteController@accueil');
-Route::get('/nos-services', 'SiteController@services');
-Route::get('/nos-profils', 'SiteController@profils');
-Route::get('/contact', 'SiteController@contact');
+    Route::get('/', 'SiteController@accueil');
+    Route::get('/nos-services', 'SiteController@services');
+    Route::get('/nos-profils', 'SiteController@profils');
+    Route::get('/contact', 'SiteController@contact');
 
-Route::get('/demander-un-devis', 'SiteController@quote');
+    Route::get('/demander-un-devis', 'SiteController@quote');
 
-Route::post('/demander-un-devis', 'SiteController@store1');
+    Route::post('/demander-un-devis', 'SiteController@store1');
 
-Route::get('/recrutement', 'RecrutementController@recrutement');
-Route::get('/offre/{slug}', 'RecrutementController@offre');
-Route::post('/recrutement', 'RecrutementController@store');
+    Route::get('/recrutement', 'RecrutementController@recrutement');
+    Route::get('/offre/{slug}', 'RecrutementController@offre');
+    Route::post('/recrutement', 'RecrutementController@store');
 
-Route::get('/blog/{slug?}', 'BlogController@blog');
-Route::get('/post/{slug}', 'BlogController@show');
+    Route::get('/blog/{slug?}', 'BlogController@blog');
+    Route::get('/post/{slug}', 'BlogController@show');
 
-Route::post('/contact', 'SiteController@store');
+    Route::post('/contact', 'SiteController@store');
+
+
+
+    Route::get('/test', function () {
+        App::setlocale('fr');
+        if (App::islocale('fr'))
+            dd(App::getlocale());
+    });
+});
 
 Auth::routes();
-
-//Route::get('/accueil', 'HomeController@index')->name('home');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+

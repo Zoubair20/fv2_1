@@ -1,36 +1,55 @@
+<style>
+    .tab{
+        width: 100%;
+    }
+    .tab, .th, .td {
+        border: 1px groove gray;
+    }
+
+    .th, .td {
+        padding: 10px;
+        /*text-align: center;*/
+    }
+    .th-size{
+        font-size: 20px;
+    }
+</style>
 @component('mail::message')
-<center>
-    <table style="width: 100%;" border="2" cellpadding="2">
-        <tbody>
+    <table class="tab">
+        <thead>
         <tr>
-            <td><strong>NOM:</strong></td>
-            <td> {{$data['nom']}} </td>
+            <th class="th th-size" colspan="2" scope="col">RECRUTEMENT FORM: {{$data['recrut']}}</th>
+        </tr>
+        </thead>
+        <tbody class="justify-content-center">
+        <tr>
+            <th class="th" scope="row">NOM: </th>
+            <td class="td"> {{$data['nom']}} </td>
         </tr>
         <tr>
-            <td><strong>PRÉNOM:</strong> </td>
-            <td>{{$data['prenom']}} </td>
+            <th class="th" scope="row">PRÉNOM: </th>
+            <td class="td">{{$data['prenom']}} </td>
         </tr>
         <tr>
-            <td><strong>EMAIL:</strong></td>
-            <td> {{$data['email']}} </td>
+            <th class="th" scope="row">EMAIL: </th>
+            <td class="td">{{$data['email']}}</td>
         </tr>
         <tr>
-            <td><strong>TÉLÉPHONE:</strong> </td>
-            <td>{{$data['telephone']}}</td>
+            <th class="th" scope="row">TÉLÉPHONE: </th>
+            <td class="td">{{$data['telephone']}}</td>
         </tr>
         <tr>
-            <td><strong>NIVEAU D'ÉTUDE:</strong> </td>
-            <td>{{$data['niveau']}}</td>
+            <th class="th">NIVEAU D'ÉTUDE: </th>
+            <td class="td">{{$data['niveau']}}</td>
         </tr>
         <tr>
-            <td><strong>ANNEES D'EXPÉRIENCES:</strong></td>
-            <td>{{$data['annee']}}</td>
+            <th class="th">ANNEES D'EXPÉRIENCES: </th>
+            <td class="td">{{$data['annee']}}</td>
         </tr>
         <tr>
-            <td><strong>MESSAGE:</strong> </td>
-            <td>{{$data['message']}}</td>
+            <th class="th" scope="row">MESSAGE: </th>
+            <td class="td">{{$data['message']}}</td>
         </tr>
         </tbody>
     </table>
-</center>
 @endcomponent
